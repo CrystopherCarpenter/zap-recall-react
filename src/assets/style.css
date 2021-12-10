@@ -51,7 +51,9 @@
   margin-left: 5px;
 }
 
-.iniciar:hover {
+.iniciar:hover,
+.botoes button:hover,
+.turn:hover {
   cursor: pointer;
 }
 

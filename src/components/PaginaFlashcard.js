@@ -58,7 +58,7 @@ export default function PaginaFlashcard() {
         
         if (card === cards.length) {
                 return (
-                        <PaginaFinalizacao>{neutro, incorreto, esforco, zap}</PaginaFinalizacao>
+                        <PaginaFinalizacao>{[neutro, incorreto, esforco, zap]}</PaginaFinalizacao>
            );
         }
 
