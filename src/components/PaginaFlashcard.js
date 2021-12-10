@@ -32,7 +32,7 @@ const cards = [
         {
                 Q: 'Usamos o npm para __',
                 R: 'gerenciar os pacotes necessários e suas dependências',
-                numeoro: 6
+                numero: 6
         },
         {
                 Q: 'Usamos props para __',
