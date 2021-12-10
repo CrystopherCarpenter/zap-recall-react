@@ -1,6 +1,7 @@
 import logoMini from "../assets/logo-mini.png";
 import turn from "../assets/turn.png";
 import { useState } from "react";
+import PaginaFinalizacao from "./PaginaFinalizacao";
 
 const cards = [
         {
@@ -53,7 +54,13 @@ let zap = 0;
 export default function PaginaFlashcard() {
         const [card, setCard] = useState(0);
         const [virar, setVirar] = useState(false);
-        const [resposta, setResposta] = useState('');   
+        const [resposta, setResposta] = useState('');
+        
+        if (card === cards.length) {
+                return (
+                        <PaginaFinalizacao>{neutro, incorreto, esforco, zap}</PaginaFinalizacao>
+           );
+        }
 
         return (
                 <div className="pagina-flashcard">

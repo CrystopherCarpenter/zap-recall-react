@@ -5,7 +5,7 @@ import { useState } from "react";
 import PaginaFlashcard from "./components/PaginaFlashcard";
         
 export default function App() {
-  const [pagina, setPagina] = useState(<PaginaFlashcard/>);
+  const [pagina, setPagina] = useState(<PaginaInicial/>);
 
         return (
           <>
