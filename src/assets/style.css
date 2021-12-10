@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.pagina-inicial {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 20vh;
+}
+
+.pagina-inicial div {
+  max-height: 611px;
+  max-width: 345px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 218px;
+  height: 279px;
+}
+
+.iniciar {
+  all: unset;
+  height: 72px;
+  width: 345px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  border: 3px solid #ffef61;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+}
+
+.iniciar img {
+  margin-left: 5px;
+}
+
+.iniciar:hover {
+  cursor: pointer;
+}
+
+.pagina-flashcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc((100vh - 575.75px) / 2);
+}
+
+.logo-mini {
+  width: 141px;
+  height: 54px;
+  position: fixed;
+  top: 26px;
+  left: 26px;
+}
+
+.flashcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 392px;
+  height: 575.75px;
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  position: relative;
+  text-align: center;
+  padding: 0 49px;
+}
+
+.pergunta h1 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #000000;
+}
+
+.resposta h2 {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  position: absolute;
+  top: 19px;
+}
+
+.resposta {
+  display: flex;
+  justify-content: center;
+  color: #000000;
+}
+
+.resposta p {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.botoes {
+  display: flex;
+  gap: 17px;
+  position: absolute;
+  bottom: 19px;
+  left: calc((100% - 311px) / 2);
+}
+
+.botoes button {
+  background: #ffffff;
+  width: 65px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+}
+
+.neutro {
+  border: 4px solid #000000;
+  border-radius: 12px;
+}
+
+.incorreto {
+  border: 4px solid #f64848;
+  border-radius: 12px;
+}
+
+.esforco {
+  border: 4px solid #62db38;
+  border-radius: 12px;
+}
+
+.zap {
+  border: 4px solid #ffef61;
+  border-radius: 12px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.contador {
+  font-size: 18px;
+  color: #000000;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.turn {
+  width: 40px;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
+
+.esconder {
+  display: none;
+}
