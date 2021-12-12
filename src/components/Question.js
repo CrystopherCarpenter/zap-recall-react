@@ -64,7 +64,7 @@ export default function Question({ answer, cardNumber }) {
         answerCounterUpdater(answer);
 
         if (cardNumber === deck.length) {
-                return <FinishPage>{answerCounter}</FinishPage>
+                return <FinishPage>{answerCounter}{deck.length}</FinishPage>
         }
 
         return (

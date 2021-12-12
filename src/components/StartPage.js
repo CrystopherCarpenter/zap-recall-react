@@ -7,7 +7,7 @@ export default function StartPage() {
         const [pagina, setPagina] = useState(false)
 
         if (pagina === true) {
-                return <FlashcardPage cardNumber={0} />
+                return <FlashcardPage />
         }
 
         return (
