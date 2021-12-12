@@ -1,10 +1,10 @@
 import "./assets/style.css";
-import PaginaInicial from "./components/PaginaInicial";
-        
+import StartPage from "./components/StartPage";
+
 export default function App() {
-         return (
-          <>
-            <PaginaInicial/>
-          </>
-        );
+  return (
+    <>
+      <StartPage />
+    </>
+  );
 }
