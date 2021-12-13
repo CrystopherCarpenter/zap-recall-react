@@ -5,9 +5,9 @@ import { useState } from "react";
 import "./style.css";
 
 export default function StartPage() {
-        const [pagina, setPagina] = useState(false)
+        const [pageChange, setPageChange] = useState(false)
 
-        if (pagina === true) {
+        if (pageChange === true) {
                 return <FlashcardPage />
         }
 
@@ -15,7 +15,7 @@ export default function StartPage() {
                 <div className="start-page">
                         <div>
                                 <img className="logo" src={logo} alt="logo" />
-                                <button className="start" onClick={() => setPagina(true)} data-identifier="start-zap-recall">Praticar React <img src={next} alt="next" /></button>
+                                <button className="start" onClick={() => setPageChange(true)} data-identifier="start-zap-recall">Praticar React <img src={next} alt="next" /></button>
                         </div>
                 </div>
 

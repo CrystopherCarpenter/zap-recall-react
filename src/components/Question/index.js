@@ -84,7 +84,7 @@ function answerCounterUpdater(answer) {
                 case 'neutral':
                         answerCounter.neutral += 1;
                         break;
-                case 'incorret':
+                case 'incorrect':
                         answerCounter.incorrect += 1;
                         break;
                 case 'effort':
