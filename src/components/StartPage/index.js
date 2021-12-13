@@ -1,7 +1,8 @@
-import FlashcardPage from "./FlashcardPage";
-import logo from "../assets/logo.png";
-import next from "../assets/next.png";
+import FlashcardPage from "../FlashcardPage/index";
+import logo from "../../assets/logo.png";
+import next from "../../assets/next.png";
 import { useState } from "react";
+import "./style.css";
 
 export default function StartPage() {
         const [pagina, setPagina] = useState(false)

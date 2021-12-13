@@ -1,5 +1,6 @@
-import Question from "./Question";
-import logoMini from "../assets/logo-mini.png";
+import Question from "../Question/index";
+import logoMini from "../../assets/logo-mini.png";
+import "./style.css";
 
 export default function FlashcardPage() {
 

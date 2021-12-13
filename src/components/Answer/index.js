@@ -1,6 +1,7 @@
-import Question from "./Question";
-import turn from "../assets/turn.png";
+import Question from "../Question/index";
+import turn from "../../assets/turn.png";
 import { useState } from "react";
+import "./style.css";
 
 export default function Answer({ card, deckLength }) {
         const [flip, setFlip] = useState(false);

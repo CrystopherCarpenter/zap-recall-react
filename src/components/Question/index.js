@@ -1,7 +1,8 @@
-import Answer from "./Answer";
-import FinishPage from "./FinishPage";
-import turn from "../assets/turn.png";
+import Answer from "../Answer/index";
+import FinishPage from "../FinishPage/index";
+import turn from "../../assets/turn.png";
 import { useState } from "react";
+import "./style.css";
 
 const deck = [
         {

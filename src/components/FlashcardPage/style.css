@@ -1,0 +1,14 @@
+.flashcard-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo-mini {
+  width: 141px;
+  height: 54px;
+  position: fixed;
+  top: 26px;
+  left: 26px;
+}
