@@ -12,25 +12,25 @@ export default function Answer({ card, deckLength }) {
 
         return (
                 <div className={`flashcard ${answer}`} data-identifier="flashcard">
-                        <div className="contador" data-identifier="counter">{`${card.number}/${deckLength}`} </div>
-                        <div className="resposta">
+                        <div className="counter" data-identifier="counter">{`${card.number}/${deckLength}`} </div>
+                        <div className="answer">
                                 <h2>{card.Q}</h2>
                                 <p>{card.A}</p>
-                                <div className={answer === '' ? "botoes" : "esconder"}>
-                                        <button className="neutro" onClick={() => {
-                                                setAnswer('neutro');
+                                <div className={answer === '' ? "buttons" : "hide"}>
+                                        <button className="neutral" onClick={() => {
+                                                setAnswer('neutral');
                                         }}>Aprendi agora</button>
-                                        <button className="incorreto" onClick={() => {
-                                                setAnswer('incorreto');
+                                        <button className="incorrect" onClick={() => {
+                                                setAnswer('incorrect');
                                         }}>Não lembrei</button>
-                                        <button className="esforco" onClick={() => {
-                                                setAnswer('esforco');
+                                        <button className="effort" onClick={() => {
+                                                setAnswer('effort');
                                         }}>Lembrei com esforço</button>
                                         <button className="zap" onClick={() => {
                                                 setAnswer('zap');
                                         }}><strong>Zap!</strong></button>
                                 </div>
-                                <img src={turn} alt="turn" className={answer !== '' ? "turn" : "esconder"} onClick={() => {
+                                <img src={turn} alt="turn" className={answer !== '' ? "turn" : "hide"} onClick={() => {
                                         setFlip(true);
                                 }} data-identifier="arrow" />
                         </div>

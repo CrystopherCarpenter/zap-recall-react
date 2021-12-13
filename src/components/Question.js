@@ -46,18 +46,17 @@ const deck = [
         }
 ];
 
-
 let answerCounter = {
         neutral: 0,
-        incorret: 0,
+        incorrect: 0,
         effort: 0,
         zap: 0
 }
 
 export default function Question({ answer, cardNumber }) {
-        const [virar, setVirar] = useState(false);
+        const [flip, setFlip] = useState(false);
 
-        if (virar === true) {
+        if (flip === true) {
                 return <Answer card={deck[cardNumber]} deckLength={deck.length} />
         }
 
@@ -69,10 +68,10 @@ export default function Question({ answer, cardNumber }) {
 
         return (
                 <div className="flashcard" data-identifier="flashcard">
-                        <div className="contador" data-identifier="counter">{`${deck[cardNumber].number}/${deck.length}`} </div>
-                        <div className="pergunta">
+                        <div className="counter" data-identifier="counter">{`${deck[cardNumber].number}/${deck.length}`} </div>
+                        <div className="question">
                                 <h1>{deck[cardNumber].Q}</h1>
-                                <img src={turn} alt="turn" className="turn" onClick={() => setVirar(true)
+                                <img src={turn} alt="turn" className="turn" onClick={() => setFlip(true)
                                 } data-identifier="arrow" />
                         </div>
                 </div>
@@ -81,13 +80,13 @@ export default function Question({ answer, cardNumber }) {
 
 function answerCounterUpdater(answer) {
         switch (answer) {
-                case 'neutro':
+                case 'neutral':
                         answerCounter.neutral += 1;
                         break;
-                case 'incorreto':
-                        answerCounter.incorret += 1;
+                case 'incorret':
+                        answerCounter.incorrect += 1;
                         break;
-                case 'esforco':
+                case 'effort':
                         answerCounter.effort += 1;
                         break;
                 case 'zap':
